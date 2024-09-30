@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-900 font-mono text-gray-300">
+
+<div class=" text-center tracking-wider">
+    <h1 class="text-3xl mt-12">Password Generator</h1>
+    <p class="mt-2">Select password length</p>
+</div>
+
+<section class="mt-12 h-[100px] flex justify-evenly items-center  md:w-1/2 md:mt-12 md:mx-auto ">
+    <div>
+        <input type="radio" name="length" value="12" checked id="length12"> 
+        <label for="length12">12 characters</label>
+     </div>
+     <div>
+        <input type="radio" name="length" value="16" checked id="length16"> 
+        <label for="length16">16 characters</label>
+     </div> 
+</section>
+
+<div class="mt-14 h-[250px] flex flex-col justify-around items-center ">
+    <button id="generate-btn"  class="bg-green-700 w-52 p-4 rounded-md">Generate Password</button>
+    <button id="reset-btn"  class="bg-green-700 w-52 p-4 rounded-md">Restore</button>
+    <input id="password"  class="bg-green-700  w-52 p-4 rounded-md focus:outline-none text-center" type="text" readonly id="password">
+</div>
+    
+<footer class="mt-10 h-[130px] flex flex-col justify-evenly items-center  ">
+    <p class="text-xs">App Developed By Victor Vergara</p>
+    <a class="text-xs"  href="https://www.instagram.com/victorcode33/">Instagram</a>
+</footer>
+
+<script src="../src/app.js"></script>
+</body>
+</html>
